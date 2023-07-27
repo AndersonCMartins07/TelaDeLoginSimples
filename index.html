@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+</head>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background-image:linear-gradient(45deg, yellow,red);
+        }
+        div{
+            background-color:rgba(0,0,0,0.9);
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            padding:100px;
+            border-radius:15px;
+            border: 3px solid red;
+            color:white;
+        }
+        h1{
+            text-align:center;
+            font-size:50px;
+        }
+        input{
+            padding:15px;
+            border:none;
+            /*border:none é para retirar as bordas do elemento escolhido*/
+            outline:none;
+            /*outline:none é para retirar as linhas do elemento*/
+            font-size:15px;
+        }
+        button{
+            background-color:dodgerblue;
+            border:none;
+            padding:15px;
+            /*padding é usado para definir a distancia entre os elementos e a margem*/
+            width:100%;
+            /*wigth é usado para tamanho do elemento, neste caso 100% fara com que o elemento ocupe o espaço total permitido da pagina e seus elementos*/
+            border-radius:10px;
+            /*boder-radius é usado para arredondar as pontas das margens do elemento selecionado*/
+            color:white;
+        }
+        button:hover{
+            /*hover é ultilizado para modificar um elemento selecionado pelo mouse
+            dando um efeito visual melhor para o usuario*/
+            background-color:aqua;
+            cursor:pointer;
+            /* cursor:pointer é usado para auterar o formato da setinha do mouse para mão ou outro elemento desejado*/
+        }
+    </style>
+<body>
+    <div>
+        <h1>Login</h1>
+        <input type="text" placeholder="Nome">
+        <br><br>
+        <input type="password" placeholder="Senha">
+        <br><br>
+        <button>Enviar</button>
+    </div>
+</body>
+</html>
